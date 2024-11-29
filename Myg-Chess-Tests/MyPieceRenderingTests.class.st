@@ -111,9 +111,9 @@ MyPieceRenderingTests >> testMyRookRendering [
     whiteRook := MyWhiteRook new.
     blackRook := MyBlackRook new.
 
-    self assert: (whiteRook renderRook: whiteSquare) equals: 'R'.
-    self assert: (whiteRook renderRook: blackSquare) equals: 'r'.
-    self assert: (blackRook renderRook: whiteSquare) equals: 'T'.
-    self assert: (blackRook renderRook: blackSquare) equals: 't'.
+    self assert: (whiteRook renderPieceOn: whiteSquare) equals: 'R'.
+    self assert: (whiteRook renderPieceOn: blackSquare) equals: 'r'.
+    self assert: (blackRook renderPieceOn: whiteSquare) equals: 'T'.
+    self assert: (blackRook renderPieceOn: blackSquare) equals: 't'.
 
 ]
